@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.hwno4.fragment.Home"
+        android:label="Home"
+        tools:layout="@layout/home"
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_notes"
+            app:destination="@id/notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/notes"
+        android:name="com.example.hwno4.fragment.notes"
+        android:label="notes"
+        tools:layout="@layout/notes"
+        />
+    <fragment
+        android:id="@+id/password_keeper"
+        android:name="com.example.hwno4.fragment.password_keeper"
+        android:label="password_keeper"
+        tools:layout="@layout/password_keeper"/>
+</navigation>
